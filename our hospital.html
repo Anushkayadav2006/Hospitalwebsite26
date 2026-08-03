@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+   /* Hospital Main Content Styling */
+.hospital-content {
+    padding: 60px 20px;
+    background-color: #f9fbfd;
+    font-family: Arial, sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a365d;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Facilities Section */
+.facilities-section {
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.facility-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+}
+
+.facility-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.facility-card h3 {
+    color: #2b6cb0;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.facility-card p {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+.facility-icon img {
+    width: 100%;          
+    height: 100%;         
+    object-fit: contain;  
+    margin-bottom: 15px;
+}
+
+
+/* Doctors Section */
+.team-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.doctor-card{
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+.doctor-card:hover{
+    transform: translateY(-5px);
+}
+
+.doc-img-placeholder {
+    width: 140px;           
+    height: 140px;          
+    margin: 0 auto 20px auto; 
+    border-radius: 50%;     
+    overflow: hidden;       
+    border: 3px solid #bee3f8; 
+    display: flex;          
+    align-items: center;    
+    justify-content: center;
+}
+
+.doc-img-placeholder img {
+    width: 100%;            
+    height: 100%;           
+    object-fit: cover;      
+}
+.doctor-card h3 {
+    color: #1a365d;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+}
+
+.doc-specialty {
+    color: #3182ce;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.doc-exp {
+    color: #718096;
+    font-size: 0.85rem;
+}
+
+
+
+
+
+ /* hero section */
+.slide-image{
+    height: 400px;
+}
+.carousel-caption>h5 ,p{
+    color: black;
+}
+ </style>
+
+</head>
+<body>
+
+   <div class="container-fluid">
+
+        <!--header start-->
+        <div class="row header">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="images/logo8.jpg" alt="" class="logo">
+        
+        
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="opd.html">OPD</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="radiology.html">Radiology</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="blood bank.html">Blood Bank</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="pharmecy.html">Pharmecy</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="our hospital.html">Our Hospitals</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link " href="contact.html">Contact </a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button type="button" class="btn btn-login me-2" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+        <a href="login.html" class="btn btn-login">Login</a> 
+      </form>
+    </div>
+  </div>
+</nav>
+            </div>
+        </div>-
+        <!--header end-->
+
+ <!-- hero section start-->
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/107.jpg" class="d-block w-100 slide-image" alt="slide1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/slide9.jpg" class="d-block w-100 slide-image" alt="slide2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/doctors-care.jpg" class="d-block w-100 slide-image" alt="slide3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+            </div>
+        </div>
+        <!-- hero section end-->
+
+
+
+
+<!-- Our Hospitals Main Content -->
+<main class="hospital-content">
+    
+    <!-- Section 1: Facilities / Amenities -->
+    <section class="facilities-section">
+        <h2 class="section-title">Our World-Class Facilities</h2>
+        <p class="section-subtitle">We provide state-of-the-art medical services with advanced technology.</p>
+        
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <img src="images/icu1.jpg" alt="ICU Facility">
+                </div>
+                <h3>Advanced ICU</h3>
+                <p>24/7 emergency care with modern life support systems and expert monitoring.</p>
+            </div>
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <img src="images/lab.jpg" alt="">
+                </div>
+                <h3>Modern Lab</h3>
+                <p>Fully automated diagnostic labs for accurate and quick test reports.</p>
+            </div>
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <img src="images/amb...jpg" alt="">
+                </div>
+                <h3>24/7 Ambulance</h3>
+                <p>Swift and fully equipped cardiac ambulances available around the clock.</p>
+            </div>
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <img src="images/ph...jpg" alt="">
+                </div>
+                <h3>Pharmacy</h3>
+                <p>In-house pharmacy stocked with all essential medicines and healthcare products.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Our Medical Team Preview -->
+    <section class="team-section">
+        <h2 class="section-title">Meet Our Senior Doctors</h2>
+        <p class="section-subtitle">Our team consists of highly experienced and qualified medical professionals.</p>
+        
+        <div class="team-grid">
+            <div class="doctor-card">
+                <div class="doc-img-placeholder">
+                    <img src="images/a.k.jpg" alt="">
+                </div>
+                <h3>Dr. A. K. Sharma</h3>
+                <p class="doc-specialty">Senior Cardiologist</p>
+                <p class="doc-exp">15+ Years Experience</p>
+            </div>
+            <div class="doctor-card">
+                <div class="doc-img-placeholder">
+                    <img src="images/priya.jpg" alt="">
+                </div>
+                <h3>Dr. Priya Verma</h3>
+                <p class="doc-specialty">Pediatrician</p>
+                <p class="doc-exp">10+ Years Experience</p>
+            </div>
+            <div class="doctor-card">
+                <div class="doc-img-placeholder">
+                 <img src="images/rajesh.jpg" alt="">
+                </div>
+                <h3>Dr. Rajesh Rai</h3>
+                <p class="doc-specialty">General Surgeon</p>
+                <p class="doc-exp">12+ Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+
+
+
+
+   <!----footer- start-->
+
+      <div class="row footer">
+        <div class="col-sm-3">
+          <h3 class="footer-heading quick-links">Quick Links</h3>
+          <ul class="quick-links">
+          <li>HIS AIIMS Patna</li>
+          <li>Lab. Reports</li>
+          <li>Check COVID Patient Status</li>
+          <li>SMS Portal</li>
+          <li>Virtual  Classroom</li>
+          <li>Emergency</li>
+          <li>Central Library</li>
+          <li>Grievance</li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d230248.33775694412!2d84.
+          94229209448244!3d25.617199139303032!3m2!1i1024!2i768!4f13.
+          1!2m1!1sAIIMS%20Patna!5e0!3m2!1sen!2sus!4v1783047907874!5m2!1sen!2sus"
+           width="220" height="250" style="border:0;" 
+           allowfullscreen="" loading="lazy" 
+           referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+          <h3 class="footer-heading  how-to-reach">How to Reach</h3>
+        </div>
+        <div class="col-sm-3">
+          <h3 class="footer-heading touch">Get in Touch</h3>
+          <ul class="get-in-touch">
+          <li>
+            <i class="bi bi-telephone-inbound"></i>
+            <span class="phone">Phone:</span><br>
+            Hospitals +91-612-2451070
+            <br>
+            Administration +0612-2451070 
+          </li>
+          <li>
+            <i class="bi bi-envelope-at"></i>
+            <span class="email">Email:</span><br>
+             admin[at]aiimspatna[dot]org
+          </li>
+          <li>
+             <i class="bi bi-geo-alt"></i>
+            <span class="address">Address:</span><br>
+            Phulwarisharif, Patna, Bihar-801507, India
+          </li>
+
+          <li>
+             <i class="bi bi-geo-alt"></i>
+            <span class="total-visitor">Total Visitor:</span><br>
+               8 8 1 9 9 5 7
+          </li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h3 class="footer-heading important-links">Important Links</h3>
+          <ul class="important-links">
+          <li>Other AIIMS</li>
+          <li>Online Registration</li>
+          <li>Blood Bank</li>
+          <li>PMSSY</li>
+          <li>PMSSY DASHBOARD</li>
+          <li>MoHFW</li>
+          <li>EPROC</li>
+          <li>EOFFICE AIIMS PATNA</li>
+          <li>india.gov.in</li>
+          </ul>
+        </div>
+      </div>
+
+
+    <!---footer -end-->
+
+
+
+ <!--bootstrap CDN JS-->
+   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    
+</body>
+</html>

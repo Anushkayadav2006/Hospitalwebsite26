@@ -1,0 +1,387 @@
+.navbar{
+    background-color: lightblue;
+}
+
+
+.header{
+    height: 70px;
+}
+.logo{
+    height: 50px;
+}
+.btn-signup{
+    border: 1px solid #01a79d;
+    background-color: #01a79d;
+
+}
+.btn-login{
+    color: white;
+    background-color: #01a79d;
+
+}
+.btn-signup:hover{
+    background-color: #01a79d;
+    color: white;
+
+}
+.btn-login:hover{
+    background-color:transparent;
+    border: 1px solid #01a79d;
+    color: #01a79d;
+}
+/* hero section */
+.slide-image{
+    height: 400px;
+}
+.carousel-caption>h5 ,p{
+    color: black;
+}
+
+
+/* services */
+.service-head{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.service-head h4{
+    text-align: center;
+}
+.service-head hr{
+    width: 50%;
+    border: 3px solid #01a79d;
+    border-radius: 10px;
+}
+.services .card{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 10px rgba(214,223,223,.3);
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+.services .card img{
+    height: 140px;
+    margin-bottom: 10px;
+}
+.services h5{
+    text-align: center;
+}
+
+.about{
+    /* height: 400px; */
+    background-color: #cbeee8;
+}
+.about-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+dir-image-outer, 
+.director-image{
+    height: 350px;
+    width: 350px;
+    border-radius:50%;
+}
+.about-col-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dir-name{
+    color: #01a79d;
+}
+
+/* counter */
+.counter{
+    background-image: url("images/counter-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.counter-count{
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* gallery */
+
+
+.gallery-title{
+    background-color: #01a79d;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius:  5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.gallery-title::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(50, 96, 128);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition:  0.4s ease;
+    z-index: 21;
+
+}
+.gallery-title:hover::after{
+    transform: scaleX(1);
+}
+
+.registered{
+   background-color:#d6e5f4;
+   padding: 20px 60px;
+}
+.registered>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.registered-card{
+  height: 100px;
+  width: 200px;
+  border: 2px solid white;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registered-card>img{
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius:5px ;
+}
+
+.registered-card:hover{
+    transform:translateY(-10px) ;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+ @media (max-width:768px){
+    .registered>div{
+        flex-direction:column ;
+        gap:10px;
+    }
+ }
+
+/*Modal */
+
+.enquiry-btn{
+  position:fixed;
+  top:60%;
+  right: -20px;;
+  transform:rotate(-90deg);
+  z-index:999;
+}
+
+.enquiry-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.enquiry-form input,select,textarea{
+    width: 100%;
+    padding: 7px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.enquiry-form input:focus,select:focus,textarea:focus{
+    border-color: #01A79D;
+}
+
+.enquiry-form textarea{
+    width: 100%;
+    height: 120px;
+    resize: none;
+}
+
+.enquiry-form button{
+    width: 100%;
+    border-radius:5px;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    color:white;
+    background-color:#01A79D;
+}
+
+/*---signUp----*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #eaf7f6;
+}
+.main-box{
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+}
+
+.form-box h2{
+    text-align: center;
+    color: #01A79D;
+    margin-bottom: 20px;
+}
+
+.form-box button{
+    background: #01A79D;
+    border: none;
+}
+
+.form-box button:hover{
+    background:#01867e ;
+}
+
+
+/*footer*/
+
+.footer{
+   
+    background-image:url(images/footer-bg.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px 40px ;
+}
+
+.footer>div{
+    margin-top: 10px;
+}
+
+.footer-haeding{
+    color:#b15110;
+}
+
+.quick-links{
+    list-style:none;
+    color: #b15110;
+    margin-top:20px;
+    line-height: 2;
+}
+
+.quick-links>li{
+    cursor: pointer;
+    transition:.3s ease-in-out;
+    color: white;
+}
+
+.quick-links>li:hover{
+    color: #01A79D;
+    transform:translateX(6px);
+}
+
+.how-to-reach{
+    padding: 7px 10px;
+    border:none;
+    font-size: 24px;
+    background-color: #b15110;
+    box-sizing: border-box;
+    width: 200px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 4px;
+  text-align: center;
+    
+}
+
+.how-to-reach:hover{
+    background-color: #01A79D;
+    color: white;
+}
+
+.touch{
+    list-style:none;
+    color: #b15110;
+    margin-top:20px;
+    line-height: 2;
+}
+
+.phone{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.get-in-touch li{
+    list-style: none;
+    margin-bottom: 10px;
+    color: white;
+}
+.get-in-touch i{
+    color: #b15110;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.email{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.address{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.total-visitor{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.important-links{
+    list-style:none;
+    color: #b15110;
+    margin-top:20px;
+    line-height: 2;
+}
+
+.important-links>li{
+    cursor: pointer;
+    transition:.3s ease-in-out;
+    color: white;
+}
+
+.important-links>li:hover{
+    color: #01A79D;
+    transform:translateX(6px);
+}
