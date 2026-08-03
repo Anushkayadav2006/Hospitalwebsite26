@@ -100,7 +100,7 @@ dir-image-outer,
 
 /* counter */
 .counter{
-    background-image: url("images/counter-bg.jpg");
+    background-image: url("counter-bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -272,7 +272,7 @@ body{
 
 .footer{
    
-    background-image:url(images/footer-bg.jpg);
+    background-image:url(footer-bg.jpg);
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-position:center;
